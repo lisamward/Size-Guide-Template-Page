@@ -1,0 +1,1159 @@
+	<!DOCTYPE html>
+	<html>
+		
+		<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<title>Clubshop Template | Samurai</title>
+			<meta name="Samuari Clubshop" content="Samuari Sports Clubshop">
+			<meta name="viewport" content="width=device-width,initial-scale=1">
+			<link href="./css/style.css" rel="stylesheet"/>
+	<style>
+.measure-yourself {
+	max-width: 1100px;
+	margin: 20px auto;
+	padding: 0px 5px 0px 5px;
+	clear: both;
+}
+.yourself, .chest, .waist, .hips, .leg {
+	float: left;
+	width: 20%;
+	text-align: center;
+	min-width: 150px;
+}
+.yourself {
+	font-weight: bold;
+	line-height: normal;
+	font-size: 22px;
+	margin-top: 5%;
+}
+.body-image {
+	padding: 0 10px 0px 5px;
+	width: 240px;
+}
+.body-text {
+	line-height: 21px;
+	padding-top: 0px;
+	padding-left: 10px;
+	padding-right: 5px;
+	font-size: 14px;
+}
+.collapsible {
+	background-color: #ededed;
+	color: black;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.active, .collapsible:hover {
+	background-color: ;
+}
+.collapsible2 {
+	background-color: #ededed;
+	color: black;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.active, .collapsible2:hover {
+	background-color: ;
+}
+.showcontent {
+	padding: 0 0px;
+	display: none;
+	overflow: hidden;
+	background-color: #fff;
+}
+.toptable {
+	padding: 0 0px;
+	display: block;
+	overflow: hidden;
+	background-color: #fff;
+}
+.collapsible:after {
+	content: '\02c5';
+	/* Unicode character for "plus" sign (+) */
+	font-size: 16px;
+	color: #000;
+	float: right;
+	margin-left: 5px;
+}
+.collapsible2:after {
+	content: "\02c5";
+	/* Unicode character for "minus" sign (-) */
+	font-size: 16px;
+	color: #000;
+	float: right;
+	margin-left: 5px;
+}
+.active:after {
+	content: "\02c5";
+	/* Unicode character for "minus" sign (-) */
+}
+.active2:after {
+	content: '\02c5';
+	/* Unicode character for "plus" sign (+) */
+}
+/*Table styles start*/
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+#mens th {
+	background-color: #26426e;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	color: white;
+	border: 1px solid #ddd;
+	width: 100px;
+}
+#ladies th {
+	background-color: #e32d4e;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	color: white;
+	border: 1px solid #ddd;
+	width: 100px;
+}
+#girls th {
+	background-color: #777;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	color: white;
+	border: 1px solid #ddd;
+}
+#unisex th {
+	background-color: #777;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	color: white;
+	border: 1px solid #ddd;
+}
+.table-heading {
+	background-color: #000;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	color: white;
+	border: 1px solid #ddd;
+}
+th, td {
+	text-align: left;
+	padding: 8px 8px 8px 15px;
+	line-height: 22px;
+}
+tr {
+	border: 1px solid #ddd;
+	background-color: #f2f2f2;
+}
+.size-tables {
+	max-width: 1100px;
+	margin: 0px auto;
+	padding: 0px 5px 0px 5px;
+	clear: both;
+}
+/*end of style for tables*/
+
+.cell {
+	max-width: 100%;
+	height: auto;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.quote {
+	color: #777;
+	font-weight: 300;
+	padding: 10px;
+	box-shadow: -5px 0 0 0 #ccc;
+	font-style: italic;
+	margin: 20px 30px;
+	border: none
+}
+.page-builder-wrapper {
+	font-family: proxima_novaregular, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 21px;
+}
+#wrapper {
+	font-family: proxima_novaregular, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 21px;
+}
+#wrapper th {
+	text-align: left;
+}
+[data-gjs-type="text"] a {
+	pointer-events: none;
+}
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	undefined: undefined;
+	margin: 0;
+}
+#irkqh {
+	padding: 10px;
+	text-align: center;
+	font-size: 22px;
+	color: #222;
+	font-weight: 700;
+}
+#ilz2a {
+	text-align: center;
+}
+body {
+	font-family: proxima_novaregular, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 21px;
+	undefined: undefined;
+}
+body {
+	font-family: proxima_novaregular, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 21px;
+}
+a.back-to-top {
+	font-size: 10px;
+	font-weight: 600;
+	padding-top: 20px;
+	text-decoration: none;
+	color: #000;
+}
+div#size-charts {
+	text-align: center;
+}
+div#custom-container {
+	border: solid 1px #d9d2d2;
+}
+p.top-link {
+	padding-top: 15px;
+}
+#info h2#info-header {
+	background: #d9d2d2;
+	padding: 12px;
+}
+#info p, #info h2 {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+* {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+	color: #000000;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #222;
+	line-height: 1.3;
+	font-size: 105%;
+	padding-bottom: 5px;
+	text-align: left;
+	font-weight: 600;
+	letter-spacing: normal;
+}
+.tab-container h2 {
+	text-align: left;
+}
+#i7gp2d-2 h3 {
+	text-align: center;
+	font-size: 90%;
+	padding-top: 30px;
+}
+span.contact {
+	font-size: 16px;
+}
+p {
+	text-align: left;
+	font-size: 14px;
+}
+div#i0aajh p {
+	text-align: center;
+	font-size: 13px;
+	padding-bottom: 6px;
+}
+div#i0aajh {
+	padding-top: 15px;
+	width: 95%;
+	margin: auto;
+}
+div#custom-made p {
+	text-align: left;
+	undefined: undefined;
+	color: #e31937;
+	padding: 20px 25px 0px 25px;
+}
+div#custom-made {
+	width: 79%;
+	margin: auto;
+}
+div#custom-image {
+	padding: 0px 40px;
+	text-align: center;
+	float: left;
+}
+div#custom-image img {
+	width: 150px;
+}
+.tab-content p {
+	padding-bottom: 10px;
+}
+.clearfix {
+	clear: both;
+}
+.container-width {
+	width: auto;
+	max-width: 1100px;
+	margin: 0 auto 0 auto;
+	clear: both;
+}
+div#banner {
+	undefined: undefined;
+	margin: auto;
+	max-width: 1100px;
+	padding: 0 20px 0 20px;
+	text-align: center;
+}
+#banner img {
+	width: auto;
+	min-width: 270px;
+}
+.blk-sect {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #fff;
+	font-family: Helvetica, serif;
+}
+.blk-desc {
+	color: #000;
+	font-size: 15px;
+	text-align: center;
+	max-width: 700px;
+	margin: 0 auto;
+	font-weight: 100;
+}
+div#ordering-guide, div#delivery, div#returns, div#size-guide {
+	border: 1px solid #ccc;
+	padding: 20px;
+}
+a.tab.tab-active {
+	background: #d9d2d2;
+}
+.tab:nth-of-type(1n) a:active {
+	text-decoration: none;
+	color: #fff;
+}
+.tab:nth-of-type(1n) a:link {
+	text-decoration: none;
+	color: #000;
+}
+a.tab {
+	color: #000;
+	text-decoration: none;
+}
+.tab-content a:link, .tab-content a:active, .tab-container a:hover {
+	text-decoration: none;
+}
+ol li {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 13px;
+}
+#contact {
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 15px;
+}
+.contact-left img {
+	width: 60px;
+	vertical-align: middle;
+	float: left;
+	margin-top: 20px;
+	margin-right: 5px;
+}
+.contact-left a {
+	text-decoration: none;
+	color: #000;
+}
+.contact-left {
+	width: 50%;
+	overflow: hidden;
+	border: 0px solid #000;
+	text-decoration: none;
+	font-size: 100%;
+	float: left;
+	padding-left: 100px;
+}
+.contact-left p {
+	margin-left: 70px;
+	font-size: 12px;
+}
+.contact-right p {
+	margin-left: 70px;
+	font-size: 12px;
+}
+.contact-right {
+	width: 50%;
+	overflow: hidden;
+	border: 0px solid #000;
+	text-decoration: none;
+	font-size: 100%;
+	padding-left: 100px;
+}
+.contact-right a {
+	text-decoration: none;
+	color: #000;
+}
+.contact-right img {
+	width: 60px;
+	vertical-align: middle;
+	float: left;
+	margin-top: 20px;
+	margin-right: 5px;
+}
+div#icon-container {
+	max-width: 1100px;
+	margin: 10px auto;
+}
+#info p {
+	padding-bottom: 10px;
+}
+#icdus {
+	width: 100%;
+	max-width: 180px;
+}
+.row {
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+	flex-wrap: nowrap;
+	padding: 10px;
+}
+#i5wrg {
+	color: black;
+}
+#i0e9h {
+	color: black;
+}
+#i5rw5 {
+	color: black;
+}
+#iv6wj {
+	color: black;
+}
+#i1jeg {
+	color: black;
+}
+#i2nuz {
+	padding: 0px 5px 0px 5px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 35px;
+	width: 1100px;
+	margin: 0px auto;
+	max-width: 100%;
+}
+.cell {
+	max-width: 100%;
+	height: auto;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+#wrapper {
+	font-family: proxima_novaregular, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 21px;
+}
+#wrapper th {
+	text-align: left;
+}
+\[data-gjs-type="text"] a {
+	pointer-events: none;
+}
+@keyframes fadeEffect {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+//media queries
+@media screen and (max-device-width: 759px) {
+	.yourself {
+		font-weight: bold;
+		line-height: normal;
+		font-size: 22px;
+		margin-top: 5%;
+		width: 100%;
+		clear: both;
+	}
+	.chest, .waist, .hips, .leg {
+		float: left;
+		width: 50%;
+		text-align: center;
+		min-width: 150px;
+	}
+}
+@media screen and (min-device-width: 481px) {
+	.mobilescroll {
+		display: none;
+	}
+}
+@media screen and (max-device-width: 480px) {
+	.mobilescroll {
+		display: block;
+		padding-bottom: 10px;
+	}
+	.yourself {
+		width: 100%;
+	}
+	.yourself, .chest, .waist, .hips, .leg {
+		float: none;
+		/* text-align: right; */
+		min-width: 150px;
+		width: 80%;
+		margin: 0px auto;
+	}
+	#i7gp2d-2 h3 {
+		text-align: center;
+		font-size: 90%;
+		padding-top: 0px !important;
+	}
+	.yourself {
+		width: 100%;
+		margin-bottom: 15px !important;
+	}
+}
+@media (min-width: 1024px) {
+	body {
+		margin: 0;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 14px;
+		line-height: 1.5;
+	}
+	ol li {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: 100%;
+	}
+	p {
+		text-align: left;
+		font-size: 100%;
+	}
+	.sub-lead-title p {
+		text-align: left;
+		font-size: 16px;
+	}
+	div#ijb938 {
+		font-size: 100%;
+	}
+}
+@media (max-width: 992px) {
+	#ilz2a {}
+	div#custom-made p {
+		text-align: left;
+		font-size: 14px;
+		color: #e31937;
+		padding: 40px 25px 0px 25px;
+	}
+	div#custom-image {
+		padding: 0px 10px 10px 10px;
+		text-align: center;
+		float: left;
+		margin-left: 0%;
+	}
+	div#custom-made {
+		width: 95%;
+		margin: auto;
+	}
+	div#custom-image img {
+		width: 110px;
+	}
+	#contact {
+		text-align: center;
+		max-width: 90%;
+		width: fit-content;
+	}
+	.contact-left {
+		float: none;
+		margin: auto;
+		padding-left: 10px;
+		min-width: 190px;
+		padding-bottom: 20px;
+		width: 100%;
+	}
+	.contact-right {
+		float: none;
+		margin: auto;
+		padding-left: 10px;
+		min-width: 190px;
+		padding-bottom: 20px;
+		width: 100%;
+	}
+	ol li {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: 89%;
+	}
+	p {
+		text-align: left;
+		font-size: 89%;
+	}
+	.sub-lead-title p {
+		font-size: 100%;
+	}
+	div#ic8zi2 {
+		display: inline-block;
+		margin-bottom: 10px;
+		margin-top: 15px;
+	}
+	div#i0aajh p {
+		text-align: left;
+		font-size: 13px;
+	}
+}
+@media (max-width: 480px) {
+	#ilz2a {}
+	.cell {
+		max-width: 100%;
+		height: auto;
+	}
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	#wrapper {
+		font-family: proxima_novaregular, Arial, Helvetica, sans-serif;
+		font-size: 15px;
+		line-height: 21px;
+	}
+	#wrapper th {
+		text-align: left;
+	}
+	\[data-gjs-type="text"] a {
+		pointer-events: none;
+	}
+	div#ijb938 {
+		font-size: 100%;
+	}
+	div#custom-made p {
+		padding: 50px 2px 0px 2px;
+		clear: none;
+	}
+	div#custom-made {
+		width: 100%;
+		margin: auto;
+	}
+	div#custom-image {
+		padding: 0px 0px;
+		undefined: undefined;
+		margin-left: 0%;
+	}
+	.contact-left {
+		width: 100%;
+	}
+	.contact-right {
+		width: 100%;
+	}
+	#ordering-guide ol {
+		list-style-position: inside;
+	}
+	\div#ordering-guide ol {
+		list-style-position: inside;
+	}
+	div#i0aajh p {
+		text-align: left;
+		font-size: 13px;
+	}
+}
+@media screen and (max-device-width: 480px) {
+	body {
+		-webkit-text-size-adjust: none;
+	}
+	\img {
+		max-width: 100%;
+		height: auto;
+	}
+	#wrapper {
+		font-family: proxima_novaregular, Arial, Helvetica, sans-serif;
+		font-size: 15px;
+		line-height: 21px;
+	}
+	#wrapper th {
+		text-align: left;
+	}
+	\[data-gjs-type="text"] a {
+		pointer-events: none;
+	}
+	.row {
+		flex-wrap: wrap;
+	}
+}
+	</style>
+	</head>
+	<body>
+
+	<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="ilz2a"><img src="https://store.samurai-sports.com//Content/78/PageBuilderImage/SIZE%20GUIDE%20ICON.png"></div>
+	<div id="irkqh">
+		SIZE GUIDE
+	</div>
+	<hr id="icdus">
+	<div id="i2nuz">
+		<a href="https://store.samurai-sports.com//Content/78/PageBuilderImage/Bosy%20Size.jpg"><img class="body-image" src="https://store.samurai-sports.com//Content/78/PageBuilderImage/BODY%20SIZES.png"></a>
+		<p class="body-text">These size guides are general guides only - sizes do vary depending on the cut and style of the garment. If you find you measure in between the measurements shown, we recommend that you order the next size up.</p>
+	</div>
+	<div class="size-tables" style="overflow-x:auto;">
+		<button class="collapsible2" type="button">MENS/UNISEX</button>
+		<div class="toptable">
+			<table id="mens">
+				<tr>
+					<th colspan="2">Label Size</th>
+					<th>XS</th>
+					<th>S</th>
+					<th>M</th>
+					<th>L</th>
+					<th>XL</th>
+					<th>2XL</th>
+					<th>3XL</th>
+					<th>4XL</th>
+					<th>5XL</th>
+				</tr>
+				<tr>
+					<td class="table-heading">Chest</td>
+					<td class="table-heading">inch<br>
+					cm</td>
+					<td>38"<br>
+					97</td>
+					<td>40"<br>
+					102</td>
+					<td>42"<br>
+					107</td>
+					<td>44"<br>
+					112</td>
+					<td>46"<br>
+					116</td>
+					<td>48"<br>
+					122</td>
+					<td>50"<br>
+					127</td>
+					<td>52"<br>
+					132</td>
+					<td>54"<br>
+					137</td>
+				</tr>
+				<tr>
+					<td class="table-heading">Waist</td>
+					<td class="table-heading">inch<br>
+					cm</td>
+					<td>30"<br>
+					76</td>
+					<td>32"<br>
+					82</td>
+					<td>34"<br>
+					87</td>
+					<td>36"<br>
+					92</td>
+					<td>38"<br>
+					97</td>
+					<td>40"<br>
+					102</td>
+					<td>42"<br>
+					107</td>
+					<td>44"<br>
+					112</td>
+					<td>46"<br>
+					116</td>
+				</tr>
+				<tr>
+					<td class="table-heading">Inside Leg</td>
+					<td class="table-heading">inch<br>
+					cm</td>
+					<td colspan="9">Short 30" / Regular 32" / Long 34" / Extra Long 36"<br>
+					Short 77 / Regular 82 / Long 87 / Extra Long 92</td>
+				</tr>
+			</table>
+			<p class="mobilescroll">Scroll to view full table &gt;&gt;</p>
+		</div>
+	</div>
+	<div class="size-tables" style="overflow-x:auto;">
+		<button class="collapsible" type="button">BOYS</button>
+		<div class="showcontent">
+			<table id="mens">
+				<tr>
+					<th colspan="2">Label Size</th>
+					<th>BABY</th>
+					<th>INFANT</th>
+					<th>XSC</th>
+					<th>CHILD</th>
+					<th>JNR</th>
+					<th>XSB</th>
+					<th>SB</th>
+					<th>MB</th>
+					<th>LB</th>
+				</tr>
+				<tr>
+					<td class="table-heading">Height guide</td>
+					<td class="table-heading">cm</td>
+					<td>80</td>
+					<td>92</td>
+					<td>104</td>
+					<td>116</td>
+					<td>128</td>
+					<td>140</td>
+					<td>152</td>
+					<td>164</td>
+					<td>170</td>
+				</tr>
+				<tr>
+					<td class="table-heading">Chest</td>
+					<td class="table-heading">inch<br>
+					cm</td>
+					<td>19"<br>
+					48</td>
+					<td>21"<br>
+					53</td>
+					<td>23"<br>
+					58</td>
+					<td>25"<br>
+					63.5</td>
+					<td>27"<br>
+					68</td>
+					<td>29"<br>
+					73</td>
+					<td>31"<br>
+					78.5</td>
+					<td>33"<br>
+					84</td>
+					<td>35"<br>
+					90</td>
+				</tr>
+				<tr>
+					<td class="table-heading">Waist</td>
+					<td class="table-heading">inch<br>
+					cm</td>
+					<td>14.5"<br>
+					37</td>
+					<td>15.5"<br>
+					39</td>
+					<td>16"<br>
+					41</td>
+					<td>18"<br>
+					46</td>
+					<td>20"<br>
+					51</td>
+					<td>22"<br>
+					56</td>
+					<td>24"<br>
+					61</td>
+					<td>26"<br>
+					65</td>
+					<td>28"<br>
+					72</td>
+				</tr>
+			</table>
+			<p class="mobilescroll">Scroll to view full table &gt;&gt;</p>
+		</div>
+	</div>
+	<div class="size-tables" style="overflow-x:auto;">
+		<button class="collapsible" type="button">LADIES</button>
+		<div class="showcontent">
+			<table id="ladies">
+				<tr>
+					<th colspan="2">Label Size</th>
+					<th>6</th>
+					<th>8</th>
+					<th>10</th>
+					<th>12</th>
+					<th>14</th>
+					<th>16</th>
+					<th>18</th>
+					<th>20</th>
+					<th>22</th>
+				</tr>
+				<tr>
+					<td class="table-heading">Chest</td>
+					<td class="table-heading">inch<br>
+					cm</td>
+					<td>30"<br>
+					77</td>
+					<td>32"<br>
+					82</td>
+					<td>34"<br>
+					87</td>
+					<td>36"<br>
+					92</td>
+					<td>38"<br>
+					97</td>
+					<td>40"<br>
+					102</td>
+					<td>42"<br>
+					107</td>
+					<td>44"<br>
+					112</td>
+					<td>46"<br>
+					116</td>
+				</tr>
+				<tr>
+					<td class="table-heading">Waist</td>
+					<td class="table-heading">inch<br>
+					cm</td>
+					<td>24"<br>
+					62</td>
+					<td>25"<br>
+					63.5</td>
+					<td>26"<br>
+					67</td>
+					<td>28"<br>
+					72</td>
+					<td>30"<br>
+					77</td>
+					<td>32"<br>
+					82</td>
+					<td>34"<br>
+					87</td>
+					<td>38"<br>
+					92</td>
+					<td>38"<br>
+					97</td>
+				</tr>
+				<tr>
+					<td class="table-heading">Hips</td>
+					<td class="table-heading">inch<br>
+					cm</td>
+					<td>32"<br>
+					82</td>
+					<td>34"<br>
+					87</td>
+					<td>35"<br>
+					90</td>
+					<td>37"<br>
+					95</td>
+					<td>39"<br>
+					100</td>
+					<td>41"<br>
+					105</td>
+					<td>43"<br>
+					110</td>
+					<td>46"<br>
+					116</td>
+					<td>48"<br>
+					120</td>
+				</tr>
+				<tr>
+					<td class="table-heading">Inside Leg</td>
+					<td class="table-heading">inch<br>
+					cm</td>
+					<td colspan="9">Short 28" / Regular 30" / Long 32" / Extra Long 34"<br>
+					Short 72 / Regular 77 / Long 82 / Extra Long 87</td>
+				</tr>
+			</table>
+			<p class="mobilescroll">Scroll to view full table &gt;&gt;</p>
+		</div>
+	</div>
+	<div class="size-tables" style="overflow-x:auto;">
+		<button class="collapsible" type="button">GIRLS</button>
+		<div class="showcontent">
+			<table id="girls">
+				<tr>
+					<th colspan="2">Label Size</th>
+					<th>BABY</th>
+					<th>INFANT</th>
+					<th>XSC</th>
+					<th>CHILD</th>
+					<th>JNR G</th>
+					<th>XSG</th>
+					<th>SG</th>
+					<th>MG</th>
+				</tr>
+				<tr>
+					<td class="table-heading">Height guide</td>
+					<td class="table-heading">cm</td>
+					<td>80</td>
+					<td>92</td>
+					<td>104</td>
+					<td>116</td>
+					<td>128</td>
+					<td>140</td>
+					<td>152</td>
+					<td>164</td>
+				</tr>
+				<tr>
+					<td class="table-heading">Chest</td>
+					<td class="table-heading">inch<br>
+					cm</td>
+					<td>19"<br>
+					48</td>
+					<td>21"<br>
+					53</td>
+					<td>23"<br>
+					58</td>
+					<td>25.5"<br>
+					65</td>
+					<td>27.5"<br>
+					70</td>
+					<td>29.5"<br>
+					75</td>
+					<td>31.5"<br>
+					80</td>
+					<td>33.5"<br>
+					85</td>
+				</tr>
+				<tr>
+					<td class="table-heading">Waist</td>
+					<td class="table-heading">inch<br>
+					cm</td>
+					<td>14.5"<br>
+					37</td>
+					<td>15.5"<br>
+					39</td>
+					<td>16"<br>
+					41</td>
+					<td>18"<br>
+					46</td>
+					<td>20"<br>
+					51</td>
+					<td>22"<br>
+					56</td>
+					<td>24"<br>
+					61</td>
+					<td>26"<br>
+					65</td>
+				</tr>
+			</table>
+			<p class="mobilescroll">Scroll to view full table &gt;&gt;</p>
+		</div>
+	</div>
+	<div class="size-tables" style="overflow-x:auto;">
+		<button class="collapsible" type="button">UNISEX SOCKS</button>
+		<div class="showcontent">
+			<table id="unisex">
+				<tr>
+					<th colspan="1">Label Size</th>
+					<th>UK FOOT SIZE</th>
+					<th>EUROPEAN FOOT SIZE</th>
+					<th>US FOOT SIZE</th>
+				</tr>
+				<tr>
+					<td class="table-heading">S</td>
+					<td>12-2</td>
+					<td>30-34</td>
+					<td>12.5-3</td>
+				</tr>
+				<tr>
+					<td class="table-heading">M</td>
+					<td>3-6.5</td>
+					<td>35-40</td>
+					<td>4-7.5</td>
+				</tr>
+				<tr>
+					<td class="table-heading">L</td>
+					<td>7-11</td>
+					<td>40-46</td>
+					<td>7.5-11.5</td>
+				</tr>
+				<tr>
+					<td class="table-heading">XL</td>
+					<td>12-14</td>
+					<td>46-48</td>
+					<td>12.5-14</td>
+				</tr>
+			</table>
+			<p class="mobilescroll">Scroll to view full table &gt;&gt;</p>
+		</div>
+	</div>
+	<div class="measure-yourself">
+		<div class="yourself">
+			Measure<br>
+			Yourself
+		</div>
+		<div class="chest"><img id="izbonk" src="https://store.samurai-sports.com//Content/78/PageBuilderImage/1%20CHEST%20BUST.png"></div>
+		<div class="waist"><img id="i24vzf" src="https://store.samurai-sports.com//Content/78/PageBuilderImage/2%20WAIST.png"></div>
+		<div class="hips"><img id="i3vnnq" src="https://store.samurai-sports.com//Content/78/PageBuilderImage/3%20HIPS.png"></div>
+		<div class="leg"><img id="ij6oxi" src="https://store.samurai-sports.com//Content/78/PageBuilderImage/4%20INSIDE%20LEG.png"></div>
+	</div>
+	<section class="blk-sect" id="i7gp2d-2">
+		<div class="container-width">
+			<div class="blk-desc">
+				<h3>Didn't find what you were looking for? Get in touch</h3>
+			</div>
+			<div id="contact">
+				<div class="contact-left">
+					<a href="tel:01508531010"><img src="https://store.samurai-sports.com//Content/78/PageBuilderImage/CALL%20US.png">
+					<p><span class="contact"><strong>Call us<br>
+					+44 (0)1508 531010</strong></span><br>
+					Monday - Friday 8:00AM - 5:00PM</p></a>
+				</div>
+				<div class="contact-right">
+					<a href="mailto:clubshops@samurai-sports.com"><img src="https://store.samurai-sports.com//Content/78/PageBuilderImage/EMAIL%20US.png">
+					<p><span class="contact"><strong>Email us<br>
+					clubshops@samurai-sports.com</strong></span><br>
+					Submit a question for our support team</p></a>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
+		
+		<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+	for (i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var showcontent = this.nextElementSibling;
+			if (showcontent.style.display === "block") {
+				showcontent.style.display = "none";
+			} else {
+				showcontent.style.display = "block";
+			}
+		});
+	}
+	var coll = document.getElementsByClassName("collapsible2");
+	var i;
+	for (i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function() {
+			this.classList.toggle("active2");
+			var toptable = this.nextElementSibling;
+			if (toptable.style.display === "none") {
+				toptable.style.display = "block";
+			} else {
+				toptable.style.display = "none";
+			}
+		});
+	}
+	</script>
+		
+	</body>
+	</html>
+
